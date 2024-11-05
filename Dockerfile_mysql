@@ -1,0 +1,12 @@
+# Dockerfile.mysql
+FROM mysql:8
+
+# Set environment variables for MySQL
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=trabalho-db
+
+# Copy the database initialization script
+COPY db.sql /docker-entrypoint-initdb.d/
+
+# Expose the default MySQL port
+EXPOSE 3306
