@@ -27,7 +27,9 @@ const formSchema = z.object({
   description: z.string().min(1, {
     message: 'Campo obrigatório.',
   }),
-  price: z.string().min(1, {
+  price: z.number({
+    required_error: 'Campo obrigatório'
+  }).min(1, {
     message: 'Campo obrigatório.',
   }),
   images: z.string().optional(),
@@ -42,7 +44,7 @@ export function ProductForm({ isOpen, setIsOpen, product }: ProductFormProps) {
     defaultValues: {
       name: product?.name,
       description: product?.description,
-      price: product?.price ? String(product?.price) : '',
+      price: product?.price ? product?.price : undefined,
     }
   })
 
@@ -135,12 +137,15 @@ export function ProductForm({ isOpen, setIsOpen, product }: ProductFormProps) {
           </div>
           <div className="flex flex-col gap-2">
             <Label htmlFor="price">
-              Preço
+              Preço (utilize PONTO para casas decimais)
             </Label>
             <Input
               id="price"
               className="col-span-3"
-              {...register('price')}
+              type="number"
+              {...register('price', {
+                valueAsNumber: true
+              })}
             />
             {errors.price?.message && (
               <span className="text-destructive text-sm">
@@ -151,7 +156,7 @@ export function ProductForm({ isOpen, setIsOpen, product }: ProductFormProps) {
           {!product && (
             <div className="flex flex-col gap-2">
               <Label htmlFor="price">
-                Imagens (separe por uma ,)
+                Imagens (separe por um espaço em branco cada URL de imagem)
               </Label>
               <Input
                 id="images"

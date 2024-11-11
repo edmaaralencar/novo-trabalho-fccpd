@@ -14,7 +14,7 @@ productRoutes.get('/', async (req, res) => {
 productRoutes.post('/', async (req, res) => {
   await productsService.create({
     description: req.body.description,
-    images: req.body.images.split(', '),
+    images: req.body.images.split(' '),
     name: req.body.name,
     price: req.body.price,
   })

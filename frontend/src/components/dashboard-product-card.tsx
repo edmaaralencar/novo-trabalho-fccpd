@@ -40,7 +40,8 @@ export function DashboardProductCard({
       })
 
       toast.success('Produto deletado com sucesso.')
-    }
+    },
+    onError: error => console.log(error)
   })
   async function onDelete() {
     await deleteProductMutation.mutateAsync()

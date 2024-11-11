@@ -53,18 +53,16 @@ INSERT INTO users (name, email, password) VALUES
   ('Edmar', 'edmar@gmail.com', 'teste123'),
   ('Gabriel', 'gabriel@gmail.com', 'teste123');
 
-INSERT INTO products (name, description, price) VALUES
-  ('Smartphone', 'Latest model smartphone with advanced features', 599.99),
-  ('Laptop', 'High-performance laptop for work and play', 1299.99),
-  ('Novel', 'Bestselling fiction book', 19.99),
-  ('T-shirt', '100% cotton t-shirt', 9.99),
-  ('Blender', 'High-speed blender for smoothies', 49.99),
-  ('Board Game', 'Fun for the whole family', 29.99);
+INSERT INTO products (name, description, price) VALUES 
+  ('Short Masculino Preto', 'Short masculino, confortável e leve, ideal para o dia a dia.', 39.90),
+  ('Polo Masculina', 'Polo masculina manga curta ideal para situações arrumadas.', 149.90),
+  ('Jaqueta de Couro Preta', 'Jaqueta de couro sintético com design moderno.', 299.90),
+  ('Vestido Floral Midi', 'Vestido com estampa floral, perfeito para ocasiões especiais.', 179.90),
+  ('Tênis Casual Branco', 'Tênis confortável em estilo casual para uso diário.', 199.90);
 
-INSERT INTO products_images (url, product_id) VALUES
-  ('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9', 1), 
-  ('https://images.unsplash.com/photo-1517336714731-489689fd1ca8', 2), 
-  ('https://images.unsplash.com/photo-1529655683826-aba9b3e77383', 3), 
-  ('https://images.unsplash.com/photo-1536528087222-ef43dd3bb0f3', 4), 
-  ('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2', 5), 
-  ('https://images.unsplash.com/photo-1599699935630-52e39b7d1a2b', 6); 
+INSERT INTO products_images (url, product_id) VALUES 
+  ('https://shop2gether.fbitsstatic.net/img/p/short-masculino-long-drewstring-preto-230941/649396.jpg?w=486&h=650&v=202410231216', 1),
+  ('https://shop2gether.fbitsstatic.net/img/p/polo-masculina-manga-curta-basica-preto-231578/651917-5.jpg?w=486&h=650&v=202410301023', 2),
+  ('https://shop2gether.fbitsstatic.net/img/p/jaqueta-masculina-lokis-preto-206841/556267.jpg?w=486&h=650&v=no-value', 3),
+  ('https://shop2gether.fbitsstatic.net/img/p/vestido-midi-floral-pintado-azul-214024/581941.jpg?w=486&h=650&v=no-value', 4),
+  ('https://shop2gether.fbitsstatic.net/img/p/tenis-masculino-branco-194338/506778.jpg?w=486&h=650&v=no-value', 5);
