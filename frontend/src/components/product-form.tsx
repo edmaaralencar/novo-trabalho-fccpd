@@ -1,6 +1,6 @@
 import { api } from "@/lib/axios";
 import { Button } from "./ui/button";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 import { useMutation, useQueryClient } from "@tanstack/react-query";

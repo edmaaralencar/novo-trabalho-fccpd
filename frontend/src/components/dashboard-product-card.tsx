@@ -1,4 +1,4 @@
-import { Minus, Pen, Plus, Trash } from 'lucide-react'
+import { Pen, Trash } from 'lucide-react'
 import { Button } from './ui/button'
 import {
   Card,

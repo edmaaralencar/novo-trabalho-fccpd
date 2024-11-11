@@ -1,7 +1,6 @@
 import { DashboardProductCard } from '@/components/dashboard-product-card'
 import { Header } from '@/components/header'
 import { Loading } from '@/components/loading'
-import { ProductCard } from '@/components/product-card'
 import { ProductForm } from '@/components/product-form'
 import { Button } from '@/components/ui/button'
 import { useCart } from '@/hooks/use-cart'
@@ -14,7 +13,7 @@ export function Dashboard() {
   const [isOpen, setIsOpen] = useState(false)
   const [selectedProduct, setSelectedProduct] = useState<{ id: number; description: string; name: string; price: number } | null>(null)
 
-  const { handleAddToCart, handleRemoveFromCart, cart } = useCart()
+  const { cart } = useCart()
 
   if (isError) {
     return null
