@@ -17,32 +17,32 @@ services:
     networks:
       - primeira-network
 
-  # api-trabalho:
-  #   build: ./backend
-  #   container_name: api-trabalho
-  #   ports:
-  #     - 4000:4000
-  #   environment:
-  #     - MYSQL_HOST=mysql
-  #     - MYSQL_USER=admin
-  #     - MYSQL_PASSWORD=root
-  #     - MYSQL_DB=trabalho-db
-  #   depends_on:
-  #     - mysql
-  #   networks:
-  #     - primeira-network
+  api-trabalho:
+    build: ./backend
+    container_name: api-trabalho
+    ports:
+      - 4000:4000
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=root
+      - MYSQL_DB=trabalho-db
+    depends_on:
+      - mysql
+    networks:
+      - primeira-network
 
-  # frontend:
-  #   build: ./frontend
-  #   container_name: frontend
-  #   ports:
-  #     - 5173:5173
-  #   depends_on:
-  #     - api-trabalho
-  #   volumes:
-  #     - /usr/src/app/node_modules
-  #   networks:
-  #     - primeira-network
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - 5173:5173
+    depends_on:
+      - api-trabalho
+    volumes:
+      - /usr/src/app/node_modules
+    networks:
+      - primeira-network
 
 
 networks:
