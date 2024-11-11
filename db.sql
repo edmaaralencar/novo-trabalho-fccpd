@@ -56,9 +56,9 @@ INSERT INTO users (name, email, password) VALUES
 INSERT INTO products (name, description, price) VALUES 
   ('Short Masculino Preto', 'Short masculino, confortável e leve, ideal para o dia a dia.', 39.90),
   ('Polo Masculina', 'Polo masculina manga curta ideal para situações arrumadas.', 149.90),
-  ('Jaqueta de Couro Preta', 'Jaqueta de couro sintético com design moderno.', 299.90),
+  ('Jaqueta de Couro Preta', 'Jaqueta de couro sintetico com design moderno.', 299.90),
   ('Vestido Floral Midi', 'Vestido com estampa floral, perfeito para ocasiões especiais.', 179.90),
-  ('Tênis Casual Branco', 'Tênis confortável em estilo casual para uso diário.', 199.90);
+  ('Tenis Casual Branco', 'Tenis confortável em estilo casual para uso diario.', 199.90);
 
 INSERT INTO products_images (url, product_id) VALUES 
   ('https://shop2gether.fbitsstatic.net/img/p/short-masculino-long-drewstring-preto-230941/649396.jpg?w=486&h=650&v=202410231216', 1),

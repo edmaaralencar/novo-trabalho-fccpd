@@ -66,6 +66,7 @@ class OrdersService {
         status: 'success',
       }
     } catch (error) {
+      console.log(error)
       return {
         status: 'error',
       }

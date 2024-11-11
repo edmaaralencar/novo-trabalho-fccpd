@@ -55,10 +55,10 @@ export function OrderCard({ order }: { order: Order }) {
                           </p>
                           <div className="flex justify-between items-center mt-2">
                             <p className="text-sm font-semibold">
-                              ${item.productPrice.toFixed(2)}
+                              {formatMoney(item.productPrice)}
                             </p>
                             <p className="text-sm text-muted-foreground">
-                              Quantity: {item.quantity}
+                              Quantidade: {item.quantity}
                             </p>
                           </div>
                         </div>

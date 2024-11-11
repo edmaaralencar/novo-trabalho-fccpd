@@ -51,7 +51,8 @@ export function DashboardProductCard({
     <Card>
       <CardHeader>
         <CardTitle>{name}</CardTitle>
-        <CardDescription>{description}</CardDescription>
+        <CardDescription className='break-words
+        '>{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <img src={images[0]} className="h-[300px] w-full" />

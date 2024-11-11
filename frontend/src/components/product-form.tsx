@@ -143,6 +143,7 @@ export function ProductForm({ isOpen, setIsOpen, product }: ProductFormProps) {
               id="price"
               className="col-span-3"
               type="number"
+              step="any"
               {...register('price', {
                 valueAsNumber: true
               })}

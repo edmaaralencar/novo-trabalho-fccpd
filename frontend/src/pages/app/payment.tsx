@@ -85,7 +85,7 @@ export function Payment() {
         description: 'Veja seus pedidos agora',
       })
 
-      navigate('/pedidos')
+      // navigate('/pedidos')
     } catch (error) {
       console.log(error)
     }
