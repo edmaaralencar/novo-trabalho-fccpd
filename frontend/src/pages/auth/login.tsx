@@ -47,7 +47,7 @@ export function Login() {
       localStorage.setItem('userId', response.data.userId)
       navigate('/')
     } catch (error) {
-      toast.error('Ocorreu um erro.')
+      toast.error('Credenciais inválidas.')
     }
   }
 
