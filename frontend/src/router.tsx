@@ -6,6 +6,7 @@ import { Login } from './pages/auth/login'
 import { Register } from './pages/auth/register'
 import { Payment } from './pages/app/payment'
 import { Orders } from './pages/app/orders'
+import { Dashboard } from './pages/app/dashboard'
 
 export const router = createBrowserRouter([
   {
@@ -34,4 +35,8 @@ export const router = createBrowserRouter([
     path: '/pedidos',
     element: <Orders />,
   },
+  {
+    path: '/dashboard',
+    element: <Dashboard />
+  }
 ])

@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS products_images (
   url VARCHAR(255) NOT NULL,
   product_id INT,
 
-  FOREIGN KEY (product_id) REFERENCES products(id)
+  FOREIGN KEY (product_id) REFERENCES products(id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS users (
